@@ -1,0 +1,50 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity ASMChart is
+	port(reset,clk,x: in std_logic;
+		z, Y0, Y1: out std_logic;
+		ckcs, ckns: out std_logic_vector(1 downto 0));
+end ASMChart;
+architecture behavior of ASMChart is
+	constant S0: std_logic_vector(1 downto 0):="00";
+	constant S1: std_logic_vector(1 downto 0):="01";
+	constant S2: std_logic_vector(1 downto 0):="10";
+	constant S3: std_logic_vector(1 downto 0):="11";
+	signal cs, next_state: std_logic_vector (1 downto 0);
+	begin
+		ckcs <= cs;
+		ckns <= next_state;
+		process(reset, clk)
+		begin
+			if (reset='1') then
+				cs<=S0;
+			elsif (rising_edge(clk)) then
+				cs <= next_state;
+			end if;
+		end process;
+		process(cs, x)
+		begin
+			case(cs) is
+				when S0 => if (x='1') then
+					next_state<=S1;
+				else
+					next_state<=S0;
+				end if;
+				when S1 => if (x='1') then
+					next_state<=S1;
+				else
+					next_state<=S2;
+				end if;
+				when S2 => if (x='1') then
+					next_state<=S1;
+				else
+					next_state<=S3;
+				end if;
+				when S3 => next_state<=S0;
+				when others=> next_state<=S0;
+			end case;
+		end process;
+		Y1<='1' when (cs=S1) else '0';
+		Y0<='1' when ((cs=S2) or (cs=S3)) else '0';
+		z<= '1' when (((cs=S1) and (x='1')) or ((cs=S2) and (x='1'))) else '0';
+end behavior;

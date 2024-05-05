@@ -1,0 +1,16 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+entity watch is 
+	port( reset, en, clk: in std_logic;
+	y2,y1,y0: out std_logic_vector(3 downto 0));
+end watch;
+architecture beh of watch is
+	begin
+	if reset='1'
+		y2,y1,y0<='0;
+	else
+	ys,y1,y0<=y2,y1,y0+1;
+	end if;
+end beh

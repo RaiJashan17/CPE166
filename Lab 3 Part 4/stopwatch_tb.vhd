@@ -1,0 +1,42 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity testbench4 is
+end testbench4;
+
+architecture tb of testbench4 is
+	component stopwatch
+		port( start, stop, clk, reset: in std_logic;
+		y0,y1,y2: out std_logic_vector(3 downto 0));
+	end component;
+signal start, stop, clk, reset: std_logic;
+signal y0, y1, y2: std_logic_vector(3 downto 0);
+begin 
+	DUT: stopwatch port map(start, stop, clk, reset, y0, y1, y2);
+	 process
+		 begin
+		 clk <= '0';
+		 wait for 5 ns;
+		 clk <= '1';
+		 wait for 5 ns;
+	 end process;
+	 
+	 process
+		 begin
+		 reset <= '1';
+		 wait for 2 ns;
+		 reset <= '0';
+		 wait for 1000000000 ns;
+	 end process;
+	 
+	 process
+		 begin
+		 stop<='1';
+		 start<='0';
+		 wait for 10 ns;
+		 stop<='0';
+		 start<='1';
+		 wait for 100 ns;
+	 end process;
+	
+ end tb;

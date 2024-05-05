@@ -1,0 +1,44 @@
+|AutoBevVendingMachine
+clk => current_state[0]~reg0.CLK
+clk => current_state[1]~reg0.CLK
+clk => current_state[2]~reg0.CLK
+clk => current_state[3]~reg0.CLK
+reset => current_state[0]~reg0.ACLR
+reset => current_state[1]~reg0.ACLR
+reset => current_state[2]~reg0.ACLR
+reset => current_state[3]~reg0.ACLR
+one => next_state.OUTPUTSELECT
+one => next_state.OUTPUTSELECT
+one => next_state.OUTPUTSELECT
+one => next_state.OUTPUTSELECT
+one => next_state.OUTPUTSELECT
+one => next_state.OUTPUTSELECT
+one => next_state.OUTPUTSELECT
+one => next_state.OUTPUTSELECT
+one => d.OUTPUTSELECT
+one => d.OUTPUTSELECT
+two => next_state.OUTPUTSELECT
+two => next_state.OUTPUTSELECT
+two => d.OUTPUTSELECT
+two => d.OUTPUTSELECT
+two => next_state.DATAA
+two => next_state.DATAA
+two => next_state.DATAA
+five => d.DATAA
+five => d.DATAA
+five => next_state.DATAA
+five => next_state.DATAA
+d << d$latch.DB_MAX_OUTPUT_PORT_TYPE
+r[0] << r[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r[1] << r[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+r[2] << r[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+current_state[0] << current_state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+current_state[1] << current_state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+current_state[2] << current_state[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+current_state[3] << current_state[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+next_state[0] << next_state[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+next_state[1] << next_state[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+next_state[2] << next_state[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+next_state[3] << next_state[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

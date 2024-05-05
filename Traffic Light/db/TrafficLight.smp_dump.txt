@@ -1,0 +1,6 @@
+
+State Machine - |TrafficLight|cs
+Name cs.red cs.green cs.yellow 
+cs.green 0 0 0 
+cs.yellow 0 1 1 
+cs.red 1 1 0 

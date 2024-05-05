@@ -1,0 +1,20 @@
+module multiplexer4bits_tb();
+reg d1;
+reg d0;
+reg s;
+wire y;
+integer i;
+
+multiplexer uut(.d(d0), .d(d1), .s(s), .y(y));
+
+initial begin
+
+	for(i=0;i<512;i=i+1)
+	begin
+		{d1, d0, s} <= i;
+		#5;
+	end
+	$finish;
+end
+
+endmodule

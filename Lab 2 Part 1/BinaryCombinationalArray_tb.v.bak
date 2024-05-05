@@ -1,0 +1,4 @@
+module BinaryCombinationalArray_tb();
+reg [2:0] x;
+reg [2:0] y;
+wire [2:0] p;

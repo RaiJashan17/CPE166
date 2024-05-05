@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Thu May  2 19:22:41 2024
+Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Revision Name : DataPath2
+Top-level Entity Name : DataPath2
+Family : MAX 10
+Total logic elements : 35
+    Total combinational functions : 19
+    Dedicated logic registers : 22
+Total registers : 22
+Total pins : 27
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

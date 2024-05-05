@@ -1,0 +1,198 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dU:/CPE166/Lab 2/Part 2/simulation/questa
+T_opt
+Z2 !s110 1709418656
+Vn=Q`0R>=caETF`IEZdF@52
+04 16 4 work CarrySelectAdder fast 0
+=1-047c169566aa-65e3a8a0-222-4090
+!s124 OEM10U42 
+Z3 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1709418713
+V1Rj5I=RoGKaIAe1Dgn2lC0
+04 19 4 work CarrySelectAdder_tb fast 0
+=1-047c169566aa-65e3a8d8-32e-38cc
+!s124 OEM10U43 
+R3
+R4
+n@_opt1
+R5
+vCarrySelectAdder
+Z6 !s110 1709418695
+!i10b 1
+!s100 VPWjVRcdbik<]49Q8[@[`3
+IHg<Q7nafb?o;QHz_NPQkA2
+R1
+w1709259582
+8U:/CPE166/Lab 2/Part 2/CarrySelectAdder.v
+FU:/CPE166/Lab 2/Part 2/CarrySelectAdder.v
+!i122 7
+L0 1 25
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2021.2;73
+r1
+!s85 0
+31
+!s108 1709418694.000000
+!s107 U:/CPE166/Lab 2/Part 2/CarrySelectAdder.v|
+!s90 -reportprogress|300|-work|work|U:/CPE166/Lab 2/Part 2/CarrySelectAdder.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+n@carry@select@adder
+vCarrySelectAdder_tb
+R6
+!i10b 1
+!s100 dDT]I>`2Eo5Moo_d]lT@X1
+Io`oKAB2Pd:YHE?@?]<mM^0
+R1
+w1708058187
+8U:/CPE166/Lab 2/Part 2/CarrySelectAdder_tb.v
+FU:/CPE166/Lab 2/Part 2/CarrySelectAdder_tb.v
+!i122 8
+L0 1 21
+R7
+R8
+r1
+!s85 0
+31
+!s108 1709418695.000000
+!s107 U:/CPE166/Lab 2/Part 2/CarrySelectAdder_tb.v|
+!s90 -reportprogress|300|-work|work|U:/CPE166/Lab 2/Part 2/CarrySelectAdder_tb.v|
+!i113 0
+R9
+R4
+n@carry@select@adder_tb
+vfullAdder
+Z10 !s110 1709418655
+!i10b 1
+!s100 NJ?P[AjD7Y6ZAEEA09>iA3
+IXKehcWFL;m91ioc6VMf3^0
+R1
+w1706841700
+8U:/CPE166/Lab 2/fullAdder.v
+FU:/CPE166/Lab 2/fullAdder.v
+!i122 3
+Z11 L0 1 11
+R7
+R8
+r1
+!s85 0
+31
+Z12 !s108 1709418655.000000
+!s107 U:/CPE166/Lab 2/fullAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/CPE166/Lab 2|U:/CPE166/Lab 2/fullAdder.v|
+!i113 0
+Z13 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 !s92 -vlog01compat -work work {+incdir+U:/CPE166/Lab 2} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+nfull@adder
+vhalfAdder
+R10
+!i10b 1
+!s100 Ck8zCb^jg1164aeg3[n9f2
+IODel:9kPIoMJdK6nU3NSL1
+R1
+w1706838314
+8U:/CPE166/Lab 2/halfAdder.v
+FU:/CPE166/Lab 2/halfAdder.v
+!i122 2
+L0 1 9
+R7
+R8
+r1
+!s85 0
+31
+R12
+!s107 U:/CPE166/Lab 2/halfAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/CPE166/Lab 2|U:/CPE166/Lab 2/halfAdder.v|
+!i113 0
+R13
+R14
+R4
+nhalf@adder
+vmultiplexer
+R10
+!i10b 1
+!s100 42@K4V<H3b<Z2^bWje0^92
+IYzRQ`o0lgkYVN22hj6`LZ3
+R1
+w1708043661
+8U:/CPE166/Lab 2/Part 2/multiplexer.v
+FU:/CPE166/Lab 2/Part 2/multiplexer.v
+!i122 0
+R11
+R7
+R8
+r1
+!s85 0
+31
+!s108 1709418654.000000
+!s107 U:/CPE166/Lab 2/Part 2/multiplexer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/CPE166/Lab 2/Part 2|U:/CPE166/Lab 2/Part 2/multiplexer.v|
+!i113 0
+R13
+Z15 !s92 -vlog01compat -work work {+incdir+U:/CPE166/Lab 2/Part 2} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vmultiplexer4bits
+R10
+!i10b 1
+!s100 ?UhD@UNjFzmmIeK3fJ<P51
+IZjk?ei?e67]nO^KdW81<13
+R1
+w1708043751
+8U:/CPE166/Lab 2/Part 2/multiplexer4bits.v
+FU:/CPE166/Lab 2/Part 2/multiplexer4bits.v
+!i122 1
+R11
+R7
+R8
+r1
+!s85 0
+31
+R12
+!s107 U:/CPE166/Lab 2/Part 2/multiplexer4bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/CPE166/Lab 2/Part 2|U:/CPE166/Lab 2/Part 2/multiplexer4bits.v|
+!i113 0
+R13
+R15
+R4
+vrippleCarryAdder
+R2
+!i10b 1
+!s100 i=9IZodalP<B:DFi1;OjM2
+IIaM<hU0g8@12@o7SV^:bG3
+R1
+w1708050667
+8U:/CPE166/Lab 2/Part 2/rippleCarryAdder.v
+FU:/CPE166/Lab 2/Part 2/rippleCarryAdder.v
+!i122 5
+L0 1 15
+R7
+R8
+r1
+!s85 0
+31
+R12
+!s107 U:/CPE166/Lab 2/Part 2/rippleCarryAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+U:/CPE166/Lab 2/Part 2|U:/CPE166/Lab 2/Part 2/rippleCarryAdder.v|
+!i113 0
+R13
+R15
+R4
+nripple@carry@adder

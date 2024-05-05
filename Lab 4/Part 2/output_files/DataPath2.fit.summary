@@ -1,0 +1,18 @@
+Fitter Status : Successful - Thu May  2 19:22:48 2024
+Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Revision Name : DataPath2
+Top-level Entity Name : DataPath2
+Family : MAX 10
+Device : 10M02DCU324A6G
+Timing Models : Final
+Total logic elements : 30 / 2,304 ( 1 % )
+    Total combinational functions : 20 / 2,304 ( < 1 % )
+    Dedicated logic registers : 22 / 2,304 ( < 1 % )
+Total registers : 22
+Total pins : 27 / 160 ( 17 % )
+Total virtual pins : 0
+Total memory bits : 0 / 110,592 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 32 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0

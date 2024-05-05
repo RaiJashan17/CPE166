@@ -1,0 +1,18 @@
+module DataPath(
+	input [3:0] M0,
+	input [3:0] M1,
+	input [3:0] M2,
+	input Cin,
+	input CLR,
+	input [2:0] W,
+	input [3:0] CE,
+	input [1:0] SEL,
+	input [3:0] M0,
+	input [2:0] S,
+	input CLK,
+	output [3:0] R0,
+	output [3:0] R1,
+	output [3:0] M2
+	);
+	
+endmodule

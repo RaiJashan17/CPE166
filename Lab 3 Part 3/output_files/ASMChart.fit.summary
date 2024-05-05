@@ -1,0 +1,18 @@
+Fitter Status : Successful - Thu Mar 28 17:36:45 2024
+Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Revision Name : ASMChart
+Top-level Entity Name : ASMChart
+Family : MAX 10
+Device : 10M02DCU324A6G
+Timing Models : Final
+Total logic elements : 6 / 2,304 ( < 1 % )
+    Total combinational functions : 6 / 2,304 ( < 1 % )
+    Dedicated logic registers : 2 / 2,304 ( < 1 % )
+Total registers : 2
+Total pins : 10 / 160 ( 6 % )
+Total virtual pins : 0
+Total memory bits : 0 / 110,592 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 32 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0

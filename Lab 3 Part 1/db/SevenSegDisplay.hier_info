@@ -1,0 +1,15 @@
+|SevenSegDisplay
+fourBitInput[0] => Decoder0.IN4
+fourBitInput[1] => Decoder0.IN3
+fourBitInput[2] => Decoder0.IN2
+fourBitInput[3] => Decoder0.IN1
+fourBitInput[4] => Decoder0.IN0
+sevenBitOutput[0] << WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+sevenBitOutput[1] << WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+sevenBitOutput[2] << WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+sevenBitOutput[3] << WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+sevenBitOutput[4] << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+sevenBitOutput[5] << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+sevenBitOutput[6] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

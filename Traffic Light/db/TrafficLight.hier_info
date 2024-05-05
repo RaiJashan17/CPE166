@@ -1,0 +1,9 @@
+|TrafficLight
+clk => cs~1.DATAIN
+reset => cs~3.DATAIN
+button => always1.IN1
+NS_traffic_light[0] <= NS_traffic_light[0].DB_MAX_OUTPUT_PORT_TYPE
+NS_traffic_light[1] <= NS_traffic_light[1].DB_MAX_OUTPUT_PORT_TYPE
+PED_light <= PED_light.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,46 @@
+module TrafficLight(
+	input clk, 
+	input reset,
+	input button,
+	output reg NS_traffic_light[1:0],
+	output reg PED_light);
+	
+parameter green=2'b10, yellow=2'b01, red=2'b00;
+reg [1:0] cs, ns;
+integer i=0;
+
+always@(posedge clk or posedge reset)
+begin
+	if(RESET)
+		cs <= green;
+	else
+		cs <= ns;
+end
+
+always@(cs, button, i)
+begin
+	case(cs)
+		green:
+			begin
+			if(button==1)
+				ns=yellow;
+				i=i+1;
+			else
+				ns=green;
+			end
+		default: ns=green;
+	endcase
+end
+			
+always@(cs)
+begin
+	case(cs)
+		green: PED_light=0;
+		yellow: PED_light=0;
+		red: PED_light=1;
+		default: PED_light=0;
+	endcase
+end
+
+endmodule
+	

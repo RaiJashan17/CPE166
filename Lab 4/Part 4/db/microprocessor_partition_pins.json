@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "R0dis[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R0dis[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R0dis[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R0dis[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R0dis[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R0dis[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R1dis[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R1dis[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R1dis[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R1dis[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R1dis[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R1dis[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R1dis[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R2dis[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R2dis[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R2dis[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R2dis[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R2dis[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R2dis[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R2dis[6]",
+					"strict" : false
+				},
+				{
+					"name" : "M0dis[0]",
+					"strict" : false
+				},
+				{
+					"name" : "M0dis[2]",
+					"strict" : false
+				},
+				{
+					"name" : "M0dis[3]",
+					"strict" : false
+				},
+				{
+					"name" : "M0dis[4]",
+					"strict" : false
+				},
+				{
+					"name" : "M0dis[6]",
+					"strict" : false
+				},
+				{
+					"name" : "M1dis[3]",
+					"strict" : false
+				},
+				{
+					"name" : "M1dis[5]",
+					"strict" : false
+				},
+				{
+					"name" : "M1dis[6]",
+					"strict" : false
+				},
+				{
+					"name" : "M2dis[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ocin",
+					"strict" : false
+				},
+				{
+					"name" : "otemp",
+					"strict" : false
+				},
+				{
+					"name" : "temp",
+					"strict" : false
+				},
+				{
+					"name" : "cin",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "SW1",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

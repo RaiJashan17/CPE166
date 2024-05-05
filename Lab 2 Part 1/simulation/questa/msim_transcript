@@ -1,0 +1,90 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do BinaryCombinationalArray_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/22.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 2 {U:/CPE166/Lab 2/halfAdder.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 14:26:44 on Mar 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+U:/CPE166/Lab 2" U:/CPE166/Lab 2/halfAdder.v 
+# -- Compiling module halfAdder
+# 
+# Top level modules:
+# 	halfAdder
+# End time: 14:26:45 on Mar 02,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 2 {U:/CPE166/Lab 2/BinaryCombinationalArray.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 14:26:45 on Mar 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+U:/CPE166/Lab 2" U:/CPE166/Lab 2/BinaryCombinationalArray.v 
+# -- Compiling module BinaryCombinationalArray
+# 
+# Top level modules:
+# 	BinaryCombinationalArray
+# End time: 14:26:45 on Mar 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 2 {U:/CPE166/Lab 2/fullAdder.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 14:26:45 on Mar 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+U:/CPE166/Lab 2" U:/CPE166/Lab 2/fullAdder.v 
+# -- Compiling module fullAdder
+# 
+# Top level modules:
+# 	fullAdder
+# End time: 14:26:45 on Mar 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 2 {U:/CPE166/Lab 2/BinaryCombinationalArray_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 14:26:45 on Mar 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+U:/CPE166/Lab 2" U:/CPE166/Lab 2/BinaryCombinationalArray_tb.v 
+# -- Compiling module BinaryCombinationalArray_tb
+# 
+# Top level modules:
+# 	BinaryCombinationalArray_tb
+# End time: 14:26:45 on Mar 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  BinaryCombinationalArray_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" BinaryCombinationalArray_tb 
+# Start time: 14:26:45 on Mar 02,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.BinaryCombinationalArray_tb(fast)
+# Loading work.BinaryCombinationalArray(fast)
+# Loading work.halfAdder(fast)
+# Loading work.fullAdder(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : U:/CPE166/Lab 2/BinaryCombinationalArray_tb.v(15)
+#    Time: 320 ps  Iteration: 0  Instance: /BinaryCombinationalArray_tb
+# 1
+# Break in Module BinaryCombinationalArray_tb at U:/CPE166/Lab 2/BinaryCombinationalArray_tb.v line 15
+# Causality operation skipped due to absence of debug database file
+# End time: 14:29:31 on Mar 02,2024, Elapsed time: 0:02:46
+# Errors: 0, Warnings: 0

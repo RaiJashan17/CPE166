@@ -1,0 +1,80 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dU:/CPE166/Traffic Light/simulation/questa
+T_opt
+!s110 1714693305
+V=FQGVe=^ML1RhR4]NQcAd1
+04 12 4 work TrafficLight fast 0
+=1-004e01c29bfe-663424b8-373-504c
+!s124 OEM10U1 
+Z2 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1714693335
+V0`I>Aj=2XNG0azdHP?Rgj0
+04 15 4 work TrafficLight_tb fast 0
+=1-004e01c29bfe-663424d6-203-2d50
+!s124 OEM10U2 
+R2
+R3
+n@_opt1
+R4
+vTrafficLight
+Z5 !s110 1714693323
+!i10b 1
+!s100 NZ`e7Nl53Ro9iSFRooaCD0
+I`EZn=MnS@UWaKG^mPIfnh2
+R1
+w1714693259
+8U:/CPE166/Traffic Light/TrafficLight.v
+FU:/CPE166/Traffic Light/TrafficLight.v
+!i122 2
+L0 1 68
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z8 !s108 1714693323.000000
+!s107 U:/CPE166/Traffic Light/TrafficLight.v|
+!s90 -reportprogress|300|-work|work|U:/CPE166/Traffic Light/TrafficLight.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+n@traffic@light
+vTrafficLight_tb
+R5
+!i10b 1
+!s100 G4?AlJjLR_4DU8lG:6G<20
+I]b0V2cdk0J5Z_R=Lj`mn?3
+R1
+w1714692722
+8U:/CPE166/Traffic Light/TrafficLight_tb.v
+FU:/CPE166/Traffic Light/TrafficLight_tb.v
+!i122 3
+L0 1 23
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 U:/CPE166/Traffic Light/TrafficLight_tb.v|
+!s90 -reportprogress|300|-work|work|U:/CPE166/Traffic Light/TrafficLight_tb.v|
+!i113 0
+R9
+R3
+n@traffic@light_tb

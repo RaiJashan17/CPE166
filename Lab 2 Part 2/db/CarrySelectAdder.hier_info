@@ -1,0 +1,418 @@
+|CarrySelectAdder
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN2
+a[5] => a[5].IN2
+a[6] => a[6].IN2
+a[7] => a[7].IN2
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN2
+b[5] => b[5].IN2
+b[6] => b[6].IN2
+b[7] => b[7].IN2
+cin => cin.IN1
+sum[0] << rippleCarryAdder:rca1.sum
+sum[1] << rippleCarryAdder:rca1.sum
+sum[2] << rippleCarryAdder:rca1.sum
+sum[3] << rippleCarryAdder:rca1.sum
+sum[4] << multiplexer4bits:muxb.y
+sum[5] << multiplexer4bits:muxb.y
+sum[6] << multiplexer4bits:muxb.y
+sum[7] << multiplexer4bits:muxb.y
+cout << multiplexer:mux.y
+
+
+|CarrySelectAdder|rippleCarryAdder:rca1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+sum[0] <= fullAdder:fa1.port3
+sum[1] <= fullAdder:fa2.port3
+sum[2] <= fullAdder:fa3.port3
+sum[3] <= fullAdder:fa4.port3
+cout <= fullAdder:fa4.port4
+
+
+|CarrySelectAdder|rippleCarryAdder:rca1|fullAdder:fa1
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca1|fullAdder:fa1|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca1|fullAdder:fa1|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca1|fullAdder:fa2
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca1|fullAdder:fa2|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca1|fullAdder:fa2|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca1|fullAdder:fa3
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca1|fullAdder:fa3|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca1|fullAdder:fa3|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca1|fullAdder:fa4
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca1|fullAdder:fa4|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca1|fullAdder:fa4|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca2
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+sum[0] <= fullAdder:fa1.port3
+sum[1] <= fullAdder:fa2.port3
+sum[2] <= fullAdder:fa3.port3
+sum[3] <= fullAdder:fa4.port3
+cout <= fullAdder:fa4.port4
+
+
+|CarrySelectAdder|rippleCarryAdder:rca2|fullAdder:fa1
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca2|fullAdder:fa1|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca2|fullAdder:fa1|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca2|fullAdder:fa2
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca2|fullAdder:fa2|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca2|fullAdder:fa2|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca2|fullAdder:fa3
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca2|fullAdder:fa3|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca2|fullAdder:fa3|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca2|fullAdder:fa4
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca2|fullAdder:fa4|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca2|fullAdder:fa4|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca3
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+sum[0] <= fullAdder:fa1.port3
+sum[1] <= fullAdder:fa2.port3
+sum[2] <= fullAdder:fa3.port3
+sum[3] <= fullAdder:fa4.port3
+cout <= fullAdder:fa4.port4
+
+
+|CarrySelectAdder|rippleCarryAdder:rca3|fullAdder:fa1
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca3|fullAdder:fa1|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca3|fullAdder:fa1|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca3|fullAdder:fa2
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca3|fullAdder:fa2|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca3|fullAdder:fa2|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca3|fullAdder:fa3
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca3|fullAdder:fa3|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca3|fullAdder:fa3|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca3|fullAdder:fa4
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca3|fullAdder:fa4|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|rippleCarryAdder:rca3|fullAdder:fa4|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|multiplexer:mux
+d0 => y.DATAA
+d1 => y.DATAB
+s => y.OUTPUTSELECT
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CarrySelectAdder|multiplexer4bits:muxb
+d0[0] => y.DATAA
+d0[1] => y.DATAA
+d0[2] => y.DATAA
+d0[3] => y.DATAA
+d1[0] => y.DATAB
+d1[1] => y.DATAB
+d1[2] => y.DATAB
+d1[3] => y.DATAB
+s => y.OUTPUTSELECT
+s => y.OUTPUTSELECT
+s => y.OUTPUTSELECT
+s => y.OUTPUTSELECT
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

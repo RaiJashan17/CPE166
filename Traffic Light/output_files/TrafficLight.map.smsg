@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at TrafficLight.v(12): always construct contains both blocking and non-blocking assignments File: U:/CPE166/Traffic Light/TrafficLight.v Line: 12
+Warning (10268): Verilog HDL information at TrafficLight.v(22): always construct contains both blocking and non-blocking assignments File: U:/CPE166/Traffic Light/TrafficLight.v Line: 22

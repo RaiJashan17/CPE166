@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sevenBitOutput[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sevenBitOutput[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sevenBitOutput[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sevenBitOutput[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sevenBitOutput[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sevenBitOutput[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sevenBitOutput[6]",
+					"strict" : false
+				},
+				{
+					"name" : "fourBitInput[4]",
+					"strict" : false
+				},
+				{
+					"name" : "fourBitInput[0]",
+					"strict" : false
+				},
+				{
+					"name" : "fourBitInput[1]",
+					"strict" : false
+				},
+				{
+					"name" : "fourBitInput[2]",
+					"strict" : false
+				},
+				{
+					"name" : "fourBitInput[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

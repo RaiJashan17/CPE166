@@ -1,0 +1,132 @@
+|BinaryCombinationalArray
+x[0] => comb.IN0
+x[0] => comb.IN0
+x[0] => comb.IN0
+x[1] => comb.IN0
+x[1] => comb.IN0
+x[1] => comb.IN0
+x[2] => comb.IN0
+x[2] => comb.IN0
+x[2] => comb.IN0
+y[0] => comb.IN1
+y[0] => comb.IN1
+y[0] => comb.IN1
+y[1] => comb.IN1
+y[1] => comb.IN1
+y[1] => comb.IN1
+y[2] => comb.IN1
+y[2] => comb.IN1
+y[2] => comb.IN1
+p[0] << comb.DB_MAX_OUTPUT_PORT_TYPE
+p[1] << halfAdder:ha1.sum
+p[2] << halfAdder:ha3.sum
+p[3] << fullAdder:fa2.sum
+p[4] << fullAdder:fa3.sum
+p[5] << fullAdder:fa3.cout
+
+
+|BinaryCombinationalArray|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BinaryCombinationalArray|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BinaryCombinationalArray|halfAdder:ha3
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BinaryCombinationalArray|fullAdder:fa1
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BinaryCombinationalArray|fullAdder:fa1|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BinaryCombinationalArray|fullAdder:fa1|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BinaryCombinationalArray|fullAdder:fa2
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BinaryCombinationalArray|fullAdder:fa2|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BinaryCombinationalArray|fullAdder:fa2|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BinaryCombinationalArray|fullAdder:fa3
+a => a.IN1
+b => b.IN1
+cin => cin.IN1
+sum <= halfAdder:ha2.port2
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BinaryCombinationalArray|fullAdder:fa3|halfAdder:ha1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BinaryCombinationalArray|fullAdder:fa3|halfAdder:ha2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

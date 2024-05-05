@@ -1,0 +1,23 @@
+module microprocessor(
+	input [3:0] M0,
+	input [3:0] M1,
+	input [3:0] M2,
+	input Cin,
+	input SW1,
+	input CLK,
+	output [6:0] R0dis,
+	output [6:0] R1dis,
+	output [6:0] R2dis
+	);
+	
+wire [3:0] R0;
+wire [3:0] R1;
+wire [3:0] R2;
+
+DataPath dp1(M0, M1, M2, Cin, SW1, CLK, R0, R1, R2);
+
+SevenSegDisplay(R0, R0dis);
+SevenSegDisplay(R1, R1dis);
+SevenSegDisplay(R2, R2dis);
+
+endmodule

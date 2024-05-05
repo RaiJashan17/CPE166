@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity testbench is
+end testbench;
+
+architecture tb of testbench is
+	component clkdiv
+		port( clkin: in std_logic;
+	clkout: out std_logic);
+	end component;
+signal clkin, clkout: std_logic;
+begin 
+	DUT: clkdiv port map(clkin, clkout);
+	 clkin <= '0', '1' after 10 ns
+	
+ end tb;

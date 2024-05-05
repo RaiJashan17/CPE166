@@ -1,0 +1,14 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.MY_PACK.all;
+entity HammingCodeGenerator is
+	port( D7: in std_logic_vector;
+			D6: in std_logic_vector;
+			D5: in std_logic_vector;
+			D3: in std_logic_vector;
+		DOUT: out std_logic(7 downto 1));
+	end HammingCodeGenerator;
+architecture ARCH of HammingCodeGenerator is
+	begin
+		DOUT <= ( 7=> D7, 6=> D6, 5=> D5, 4=> 0, 3=> D3, 2=> 0, 1=> D0);
+	end ARCH;

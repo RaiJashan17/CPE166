@@ -1,0 +1,12 @@
+module AutoBevVendingMachine(
+	input clk,
+	input reset,
+	input one,
+	input two,
+	input five,
+	output d,
+	output [2:0] r);
+	
+reg d, r;
+parameter idle=4'0000,S1=4'0001,S2=4'0010,S3=4'0011,S4=4'0100,S5=4'0101,S6=4'0110,S7=4'0111,S8=4'1000,S9=4'1001
+

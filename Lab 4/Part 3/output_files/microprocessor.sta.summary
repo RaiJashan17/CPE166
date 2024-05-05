@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -4.947
+TNS   : -32.196
+
+Type  : Slow 1200mV 85C Model Setup 'DataPath2:dp1|fsm:FSM1|cs.s4'
+Slack : -0.894
+TNS   : -1.752
+
+Type  : Slow 1200mV 85C Model Hold 'DataPath2:dp1|fsm:FSM1|cs.s4'
+Slack : 0.552
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.597
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CLK'
+Slack : -0.592
+TNS   : -5.732
+
+Type  : Slow 1200mV 85C Model Removal 'CLK'
+Slack : 0.990
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -26.851
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DataPath2:dp1|fsm:FSM1|cs.s4'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -4.453
+TNS   : -28.283
+
+Type  : Slow 1200mV 0C Model Setup 'DataPath2:dp1|fsm:FSM1|cs.s4'
+Slack : -0.754
+TNS   : -1.478
+
+Type  : Slow 1200mV 0C Model Hold 'DataPath2:dp1|fsm:FSM1|cs.s4'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.546
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CLK'
+Slack : -0.458
+TNS   : -4.331
+
+Type  : Slow 1200mV 0C Model Removal 'CLK'
+Slack : 0.911
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -26.851
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DataPath2:dp1|fsm:FSM1|cs.s4'
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -1.890
+TNS   : -9.533
+
+Type  : Fast 1200mV 0C Model Setup 'DataPath2:dp1|fsm:FSM1|cs.s4'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DataPath2:dp1|fsm:FSM1|cs.s4'
+Slack : 0.157
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.225
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'CLK'
+Slack : 0.257
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'CLK'
+Slack : 0.432
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -22.755
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DataPath2:dp1|fsm:FSM1|cs.s4'
+Slack : 0.306
+TNS   : 0.000
+
+------------------------------------------------------------

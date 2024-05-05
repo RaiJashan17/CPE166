@@ -1,0 +1,14 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 4 {U:/CPE166/Lab 4/multiplexer4bits.v}
+vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 4 {U:/CPE166/Lab 4/multiplexer.v}
+vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 4 {U:/CPE166/Lab 4/fsm.v}
+vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 4 {U:/CPE166/Lab 4/DFlipFlop.v}
+vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 4 {U:/CPE166/Lab 4/DataPath2.v}
+vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 4 {U:/CPE166/Lab 4/ALU.v}
+

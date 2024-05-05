@@ -1,0 +1,6 @@
+module fsm(
+	input RESET,
+	input CLK,
+	output CLR,
+	output W[2:0],
+	output CE[3:0]

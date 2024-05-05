@@ -1,0 +1,299 @@
+|DataPath
+M0[0] => M0[0].IN1
+M0[1] => M0[1].IN1
+M0[2] => M0[2].IN1
+M0[3] => M0[3].IN1
+M1[0] => M1[0].IN1
+M1[1] => M1[1].IN1
+M1[2] => M1[2].IN1
+M1[3] => M1[3].IN1
+M2[0] => M2[0].IN1
+M2[1] => M2[1].IN1
+M2[2] => M2[2].IN1
+M2[3] => M2[3].IN1
+Cin => Cin.IN1
+CLR => CLR.IN4
+W[0] => W[0].IN1
+W[1] => W[1].IN1
+W[2] => W[2].IN1
+CE[0] => CE[0].IN1
+CE[1] => CE[1].IN1
+CE[2] => CE[2].IN1
+CE[3] => CE[3].IN1
+SEL[0] => SEL[0].IN1
+SEL[1] => SEL[1].IN1
+S[0] => S[0].IN1
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+CLK => CLK.IN4
+R0[0] << R0[0].DB_MAX_OUTPUT_PORT_TYPE
+R0[1] << R0[1].DB_MAX_OUTPUT_PORT_TYPE
+R0[2] << R0[2].DB_MAX_OUTPUT_PORT_TYPE
+R0[3] << R0[3].DB_MAX_OUTPUT_PORT_TYPE
+R1[0] << R1[0].DB_MAX_OUTPUT_PORT_TYPE
+R1[1] << R1[1].DB_MAX_OUTPUT_PORT_TYPE
+R1[2] << R1[2].DB_MAX_OUTPUT_PORT_TYPE
+R1[3] << R1[3].DB_MAX_OUTPUT_PORT_TYPE
+R2[0] << R2[0].DB_MAX_OUTPUT_PORT_TYPE
+R2[1] << R2[1].DB_MAX_OUTPUT_PORT_TYPE
+R2[2] << R2[2].DB_MAX_OUTPUT_PORT_TYPE
+R2[3] << R2[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DataPath|multiplexer:mu1
+D0[0] => Y.DATAA
+D0[1] => Y.DATAA
+D0[2] => Y.DATAA
+D0[3] => Y.DATAA
+D1[0] => Y.DATAB
+D1[1] => Y.DATAB
+D1[2] => Y.DATAB
+D1[3] => Y.DATAB
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DataPath|multiplexer:mu2
+D0[0] => Y.DATAA
+D0[1] => Y.DATAA
+D0[2] => Y.DATAA
+D0[3] => Y.DATAA
+D1[0] => Y.DATAB
+D1[1] => Y.DATAB
+D1[2] => Y.DATAB
+D1[3] => Y.DATAB
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DataPath|multiplexer:mu3
+D0[0] => Y.DATAA
+D0[1] => Y.DATAA
+D0[2] => Y.DATAA
+D0[3] => Y.DATAA
+D1[0] => Y.DATAB
+D1[1] => Y.DATAB
+D1[2] => Y.DATAB
+D1[3] => Y.DATAB
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DataPath|DFlipFlop:df1
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+CLR => Q[0]~reg0.ACLR
+CLR => Q[1]~reg0.ACLR
+CLR => Q[2]~reg0.ACLR
+CLR => Q[3]~reg0.ACLR
+CE => Q[3]~reg0.ENA
+CE => Q[2]~reg0.ENA
+CE => Q[1]~reg0.ENA
+CE => Q[0]~reg0.ENA
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DataPath|DFlipFlop:df2
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+CLR => Q[0]~reg0.ACLR
+CLR => Q[1]~reg0.ACLR
+CLR => Q[2]~reg0.ACLR
+CLR => Q[3]~reg0.ACLR
+CE => Q[3]~reg0.ENA
+CE => Q[2]~reg0.ENA
+CE => Q[1]~reg0.ENA
+CE => Q[0]~reg0.ENA
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DataPath|DFlipFlop:df3
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+CLR => Q[0]~reg0.ACLR
+CLR => Q[1]~reg0.ACLR
+CLR => Q[2]~reg0.ACLR
+CLR => Q[3]~reg0.ACLR
+CE => Q[3]~reg0.ENA
+CE => Q[2]~reg0.ENA
+CE => Q[1]~reg0.ENA
+CE => Q[0]~reg0.ENA
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DataPath|multiplexer4bits:mu4
+D0[0] => Y.DATAA
+D0[1] => Y.DATAA
+D0[2] => Y.DATAA
+D0[3] => Y.DATAA
+D1[0] => Y.DATAB
+D1[1] => Y.DATAB
+D1[2] => Y.DATAB
+D1[3] => Y.DATAB
+D2[0] => Y.DATAA
+D2[1] => Y.DATAA
+D2[2] => Y.DATAA
+D2[3] => Y.DATAA
+D3[0] => Y.DATAB
+D3[1] => Y.DATAB
+D3[2] => Y.DATAB
+D3[3] => Y.DATAB
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[1] => Y.OUTPUTSELECT
+S[1] => Y.OUTPUTSELECT
+S[1] => Y.OUTPUTSELECT
+S[1] => Y.OUTPUTSELECT
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DataPath|ALU:ALU1
+S[0] => Mux0.IN8
+S[0] => Mux1.IN8
+S[0] => Mux2.IN8
+S[0] => Mux3.IN8
+S[1] => Mux0.IN7
+S[1] => Mux1.IN7
+S[1] => Mux2.IN7
+S[1] => Mux3.IN7
+S[2] => Mux0.IN6
+S[2] => Mux1.IN6
+S[2] => Mux2.IN6
+S[2] => Mux3.IN6
+Cin => Add1.IN8
+Cin => Add3.IN8
+B[0] => Add0.IN4
+B[0] => Y.IN0
+B[0] => Y.IN0
+B[0] => Y.IN0
+B[0] => Mux3.IN9
+B[0] => Add2.IN4
+B[1] => Add0.IN3
+B[1] => Y.IN0
+B[1] => Y.IN0
+B[1] => Y.IN0
+B[1] => Mux2.IN9
+B[1] => Add2.IN3
+B[2] => Add0.IN2
+B[2] => Y.IN0
+B[2] => Y.IN0
+B[2] => Y.IN0
+B[2] => Mux1.IN9
+B[2] => Add2.IN2
+B[3] => Add0.IN1
+B[3] => Y.IN0
+B[3] => Y.IN0
+B[3] => Y.IN0
+B[3] => Mux0.IN9
+B[3] => Add2.IN1
+A[0] => Add0.IN8
+A[0] => Add2.IN8
+A[0] => Y.IN1
+A[0] => Y.IN1
+A[0] => Y.IN1
+A[0] => Mux3.IN10
+A[0] => Mux3.IN4
+A[1] => Add0.IN7
+A[1] => Add2.IN7
+A[1] => Y.IN1
+A[1] => Y.IN1
+A[1] => Y.IN1
+A[1] => Mux2.IN10
+A[1] => Mux2.IN4
+A[2] => Add0.IN6
+A[2] => Add2.IN6
+A[2] => Y.IN1
+A[2] => Y.IN1
+A[2] => Y.IN1
+A[2] => Mux1.IN10
+A[2] => Mux1.IN4
+A[3] => Add0.IN5
+A[3] => Add2.IN5
+A[3] => Y.IN1
+A[3] => Y.IN1
+A[3] => Y.IN1
+A[3] => Mux0.IN10
+A[3] => Mux0.IN4
+Y[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DataPath|DFlipFlop:df4
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+CLR => Q[0]~reg0.ACLR
+CLR => Q[1]~reg0.ACLR
+CLR => Q[2]~reg0.ACLR
+CLR => Q[3]~reg0.ACLR
+CE => Q[3]~reg0.ENA
+CE => Q[2]~reg0.ENA
+CE => Q[1]~reg0.ENA
+CE => Q[0]~reg0.ENA
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

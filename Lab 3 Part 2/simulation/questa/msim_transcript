@@ -1,0 +1,108 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do HammingCodeGenerator_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/22.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {U:/CPE166/Lab 3/Part 2/MY_PACK.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 18:32:06 on Mar 14,2024
+# vcom -reportprogress 300 -93 -work work U:/CPE166/Lab 3/Part 2/MY_PACK.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package MY_PACK
+# -- Compiling package body MY_PACK
+# -- Loading package MY_PACK
+# End time: 18:32:06 on Mar 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {U:/CPE166/Lab 3/Part 2/EVENPAR3BIT.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 18:32:06 on Mar 14,2024
+# vcom -reportprogress 300 -93 -work work U:/CPE166/Lab 3/Part 2/EVENPAR3BIT.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MY_PACK
+# -- Compiling entity EVENPAR3BIT
+# -- Compiling architecture ARCH of EVENPAR3BIT
+# End time: 18:32:07 on Mar 14,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {U:/CPE166/Lab 3/Part 2/HammingCodeGenerator.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 18:32:09 on Mar 14,2024
+# vcom -reportprogress 300 -93 -work work U:/CPE166/Lab 3/Part 2/HammingCodeGenerator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MY_PACK
+# -- Compiling entity HammingCodeGenerator
+# -- Compiling architecture ARCH of HammingCodeGenerator
+# End time: 18:32:09 on Mar 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work {U:/CPE166/Lab 3/Part 2/HammingCodeGenerator.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 18:32:21 on Mar 14,2024
+# vcom -reportprogress 300 -work work U:/CPE166/Lab 3/Part 2/HammingCodeGenerator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MY_PACK
+# -- Compiling entity HammingCodeGenerator
+# -- Compiling architecture ARCH of HammingCodeGenerator
+# End time: 18:32:21 on Mar 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {U:/CPE166/Lab 3/Part 2/HammingCodeGenerator_tb.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 18:32:21 on Mar 14,2024
+# vcom -reportprogress 300 -work work U:/CPE166/Lab 3/Part 2/HammingCodeGenerator_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity HammingCodeGenerator_tb
+# -- Compiling architecture tb_arch of HammingCodeGenerator_tb
+# End time: 18:32:22 on Mar 14,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -gui -l msim_transcript work.hammingcodegenerator_tb -voptargs=+acc
+# vsim -gui -l msim_transcript work.hammingcodegenerator_tb -voptargs="+acc" 
+# Start time: 18:32:30 on Mar 14,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.hammingcodegenerator_tb(tb_arch)#1
+# Loading work.my_pack(body)
+# Loading work.hammingcodegenerator(arch)#1
+# Loading work.evenpar3bit(arch)#1
+add wave -position end  sim:/hammingcodegenerator_tb/D7
+add wave -position end  sim:/hammingcodegenerator_tb/D6
+add wave -position end  sim:/hammingcodegenerator_tb/D5
+add wave -position end  sim:/hammingcodegenerator_tb/D3
+add wave -position end  sim:/hammingcodegenerator_tb/DOUT
+# Can't move the Now cursor.
+run
+run
+# Causality operation skipped due to absence of debug database file
+# End time: 18:45:44 on Mar 14,2024, Elapsed time: 0:13:14
+# Errors: 0, Warnings: 0

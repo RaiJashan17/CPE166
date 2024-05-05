@@ -1,0 +1,21 @@
+module AutoBevVendingMachine_tb;
+input clk, reset, one, two, five;
+wire d;
+wire [2:0] r;
+wire[4:0] current_state, next_state;
+
+AutoBevVendingMachine uut(clk, reset, one, two, five, d, r, current_state, next_state);
+
+initial clk=0;
+always #10 clk=~clk;
+
+initial begin
+	reset = 1; one = 0; two=0; five=0;
+	#25 reset = 0; x = 1;
+	#40 x = 0;
+	#40 x = 1;
+	#40 x = 0;
+	#40 x = 1;
+	#40 $stop;
+	end
+endmodule

@@ -1,0 +1,18 @@
+Fitter Status : Successful - Thu May  2 16:41:15 2024
+Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Revision Name : TrafficLight
+Top-level Entity Name : TrafficLight
+Family : MAX 10
+Device : 10M02DCU324A6G
+Timing Models : Final
+Total logic elements : 133 / 2,304 ( 6 % )
+    Total combinational functions : 133 / 2,304 ( 6 % )
+    Dedicated logic registers : 3 / 2,304 ( < 1 % )
+Total registers : 3
+Total pins : 6 / 160 ( 4 % )
+Total virtual pins : 0
+Total memory bits : 0 / 110,592 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 32 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0

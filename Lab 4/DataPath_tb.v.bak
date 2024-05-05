@@ -1,0 +1,35 @@
+module DataPath_tb();
+reg [3:0] M0;
+reg [3:0] M1;
+reg [3:0] M2;
+reg Cin;
+reg CLR;
+reg [2:0] W;
+reg [3:0] CE;
+reg [1:0] SEL;
+reg [2:0] S;
+reg CLK;
+wire [3:0] R0;
+wire [3:0] R1;
+wire [3:0] R2;
+integer i;
+
+DataPath uut(.M0(M0), .M1(M1), .M2(M2), .Cin(Cin), .CLR(CLR), .W(W), .CE(CE), .SEL(SEL), .S(S), .CLK(CLK), .R0(R0), .R1(R1), .R2(R2));
+
+initial begin
+	for(i=0;i<67108864;i=i+1)
+	begin
+		{M0, M1, M2, Cin, CLR, W, CE, SEL, S} <= i;
+		#5;
+	end
+	$finish;
+end
+always@(CLK)
+begin
+	CLK=1;
+	#10;
+	CLK=0;
+	#10;
+end 
+
+endmodule

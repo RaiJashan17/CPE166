@@ -1,0 +1,72 @@
+library ieee;
+
+use  ieee.std_logic_1164.all;
+
+entity  EVENPAR3BIT_tb is
+
+end  EVENPAR3BIT_tb;
+
+architecture  tb_arch of EVENPAR3BIT_tb is
+
+signal   db:   std_logic_vector(2 downto 0);
+
+signal   pb:    std_logic;
+
+component EVENPAR3BIT
+
+ port (   db:   in  std_logic_vector(2 downto 0);
+                  pb:   out std_logic );
+
+end  component;
+
+begin
+
+     uut:  EVENPAR3BIT por map ( db, pb );
+
+     process
+
+      begin
+
+              db <=  "000";
+
+              wait for 10 ns;
+
+              db <=  "001";
+
+              wait for 10 ns;
+
+            
+
+              db <=  "010";
+
+              wait for 10 ns;
+
+              db <=  "011";
+
+              wait for 10 ns;
+
+              db <=  "100";
+
+              wait for 10 ns;
+
+              db <=  "101";
+
+              wait for 10 ns;
+
+            
+
+              db <=  "110";
+
+              wait for 10 ns;
+
+              db <=  "111";
+
+              wait for 10 ns;
+
+              wait;              -- wait is required in this testbench      
+
+      end process;
+
+ 
+
+end EVENPAR3BIT_arch;

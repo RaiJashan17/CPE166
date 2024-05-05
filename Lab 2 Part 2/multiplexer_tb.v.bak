@@ -1,0 +1,19 @@
+module multiplexer_tb();
+reg [1:0] d;
+reg s;
+wire y;
+integer i;
+
+multiplexer uut(.d(d), .s(s), .y(y));
+
+initial begin
+
+	for(i=0;i<8;i=i+1)
+	begin
+		{d, s} <= i;
+		#5;
+	end
+	$finish;
+end
+
+endmodule

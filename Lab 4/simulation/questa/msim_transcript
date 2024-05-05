@@ -1,0 +1,153 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do DataPath_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/22.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 4 {U:/CPE166/Lab 4/DataPath.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:16:00 on May 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+U:/CPE166/Lab 4" U:/CPE166/Lab 4/DataPath.v 
+# -- Compiling module DataPath
+# 
+# Top level modules:
+# 	DataPath
+# End time: 19:16:00 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 4 {U:/CPE166/Lab 4/multiplexer.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:16:00 on May 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+U:/CPE166/Lab 4" U:/CPE166/Lab 4/multiplexer.v 
+# -- Compiling module multiplexer
+# 
+# Top level modules:
+# 	multiplexer
+# End time: 19:16:00 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 4 {U:/CPE166/Lab 4/multiplexer4bits.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:16:00 on May 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+U:/CPE166/Lab 4" U:/CPE166/Lab 4/multiplexer4bits.v 
+# -- Compiling module multiplexer4bits
+# 
+# Top level modules:
+# 	multiplexer4bits
+# End time: 19:16:00 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 4 {U:/CPE166/Lab 4/ALU.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:16:00 on May 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+U:/CPE166/Lab 4" U:/CPE166/Lab 4/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 19:16:00 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 4 {U:/CPE166/Lab 4/DFlipFlop.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:16:00 on May 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+U:/CPE166/Lab 4" U:/CPE166/Lab 4/DFlipFlop.v 
+# -- Compiling module DFlipFlop
+# 
+# Top level modules:
+# 	DFlipFlop
+# End time: 19:16:01 on May 02,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+U:/CPE166/Lab\ 4 {U:/CPE166/Lab 4/DataPath_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:16:01 on May 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+U:/CPE166/Lab 4" U:/CPE166/Lab 4/DataPath_tb.v 
+# -- Compiling module DataPath_tb
+# 
+# Top level modules:
+# 	DataPath_tb
+# End time: 19:16:01 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  DataPath
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" DataPath 
+# Start time: 19:16:01 on May 02,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.DataPath(fast)
+# Loading work.multiplexer(fast)
+# Loading work.DFlipFlop(fast)
+# Loading work.multiplexer4bits(fast)
+# Loading work.ALU(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+vlog -reportprogress 300 -work work {U:/CPE166/Lab 4/DataPath.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:16:21 on May 02,2024
+# vlog -reportprogress 300 -work work U:/CPE166/Lab 4/DataPath.v 
+# -- Compiling module DataPath
+# 
+# Top level modules:
+# 	DataPath
+# End time: 19:16:21 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {U:/CPE166/Lab 4/DataPath_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:16:21 on May 02,2024
+# vlog -reportprogress 300 -work work U:/CPE166/Lab 4/DataPath_tb.v 
+# -- Compiling module DataPath_tb
+# 
+# Top level modules:
+# 	DataPath_tb
+# End time: 19:16:21 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=+acc work.DataPath_tb
+# End time: 19:16:30 on May 02,2024, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 0
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc" work.DataPath_tb 
+# Start time: 19:16:30 on May 02,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.DataPath_tb(fast)
+# Loading work.DataPath(fast)
+# Loading work.multiplexer(fast)
+# Loading work.DFlipFlop(fast)
+# Loading work.multiplexer4bits(fast)
+# Loading work.ALU(fast)
+add wave -position end  sim:/DataPath_tb/M0
+add wave -position end  sim:/DataPath_tb/M1
+add wave -position end  sim:/DataPath_tb/M2
+add wave -position end  sim:/DataPath_tb/Cin
+add wave -position end  sim:/DataPath_tb/CLR
+add wave -position end  sim:/DataPath_tb/W
+add wave -position end  sim:/DataPath_tb/CE
+add wave -position end  sim:/DataPath_tb/SEL
+add wave -position end  sim:/DataPath_tb/S
+add wave -position end  sim:/DataPath_tb/CLK
+add wave -position end  sim:/DataPath_tb/R0
+add wave -position end  sim:/DataPath_tb/R1
+add wave -position end  sim:/DataPath_tb/R2
+run
+# Causality operation skipped due to absence of debug database file
+# End time: 19:17:16 on May 02,2024, Elapsed time: 0:00:46
+# Errors: 0, Warnings: 0

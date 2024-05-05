@@ -1,0 +1,19 @@
+module halfAdder_tb();
+	reg a,b;
+	wire sum, cout;
+	halfAdder uut (.a(a), .b(b), .sum(sum), .cout(cout));
+	integer i;
+initial begin
+
+			for (i=0; i <= 3; i = i+1)
+
+            begin
+
+                  {a,b} <= i;
+
+                   #10; 
+						 end
+
+  $finish;
+  end
+endmodule

@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 125C Model Setup 'CLK'
+Slack : -2.698
+TNS   : -21.137
+
+Type  : Slow 1200mV 125C Model Setup 'fsm:FSM1|cs.s4'
+Slack : -1.159
+TNS   : -2.245
+
+Type  : Slow 1200mV 125C Model Hold 'CLK'
+Slack : 0.390
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Hold 'fsm:FSM1|cs.s4'
+Slack : 0.810
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Recovery 'CLK'
+Slack : -0.518
+TNS   : -8.096
+
+Type  : Slow 1200mV 125C Model Removal 'CLK'
+Slack : 1.078
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -33.866
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'fsm:FSM1|cs.s4'
+Slack : 0.314
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'CLK'
+Slack : -2.184
+TNS   : -15.622
+
+Type  : Slow 1200mV -40C Model Setup 'fsm:FSM1|cs.s4'
+Slack : -0.819
+TNS   : -1.584
+
+Type  : Slow 1200mV -40C Model Hold 'CLK'
+Slack : 0.352
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'fsm:FSM1|cs.s4'
+Slack : 0.725
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'CLK'
+Slack : -0.310
+TNS   : -4.864
+
+Type  : Slow 1200mV -40C Model Removal 'CLK'
+Slack : 0.956
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -31.094
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'fsm:FSM1|cs.s4'
+Slack : 0.421
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'CLK'
+Slack : -0.756
+TNS   : -4.037
+
+Type  : Fast 1200mV -40C Model Setup 'fsm:FSM1|cs.s4'
+Slack : -0.013
+TNS   : -0.013
+
+Type  : Fast 1200mV -40C Model Hold 'CLK'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'fsm:FSM1|cs.s4'
+Slack : 0.323
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'CLK'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'CLK'
+Slack : 0.460
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -25.546
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'fsm:FSM1|cs.s4'
+Slack : 0.369
+TNS   : 0.000
+
+------------------------------------------------------------

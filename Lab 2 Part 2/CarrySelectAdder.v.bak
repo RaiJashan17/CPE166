@@ -1,0 +1,5 @@
+module CarrySelectAdder(a,b,cin,sum,cout);
+input a[3:0], b[3:0], cin, sum[3:0];
+output cout;
+
+endmodule

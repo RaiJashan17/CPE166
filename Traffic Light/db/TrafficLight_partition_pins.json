@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "NS_traffic_light[0]",
+					"strict" : false
+				},
+				{
+					"name" : "NS_traffic_light[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PED_light",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "button",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
